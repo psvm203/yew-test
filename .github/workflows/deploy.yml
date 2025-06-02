@@ -34,7 +34,7 @@ jobs:
         run: RUSTFLAGS='--cfg getrandom_backend="wasm_js"' trunk build --public-url "/yew-test" --release
 
       - name: Setup pages
-        uses: actions/configure-page@v5
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
